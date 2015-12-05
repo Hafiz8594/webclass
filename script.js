@@ -13,10 +13,14 @@ function confirmation() {
 
 function validateForm(form){
     
-    var name = "";
+    //var name = "";
+    var name = form.name.value;
+    var email = form.email.value;
+    var rating = form.rating.value;
+    var comment = form.comment.value;
 	//var name = document.getElementsByName("name");
-	var email = document.getElementsByName("email");
-	var rating = document.getElementsByName("rating");
+	//var email = document.getElementsByName("email");
+	//var rating = document.getElementsByName("rating");
 
     alert(name);
 
@@ -27,21 +31,27 @@ function validateForm(form){
         document.getElementById("name").focus();
         document.getElementById("name").style.backgroundColor = "#FF6666";
         return false;
-    } else if (passcode == null || passcode == "") {
-    	alert("Passcode must be filled out.");
-        document.getElementById("passcode").focus();
-        document.getElementById("passcode").style.backgroundColor = "#FF6666";
-        return false;
-    }
-    else if (email == null ||  email == "") {
+    } else if (email == null || email == ""){
         alert("Email must be filled out.");
         document.getElementById("email").focus();
         document.getElementById("email").style.backgroundColor = "#FF6666";
         return false;
-    } else if (cell == null || cell =="") {
-    	alert("Cell number must be entered.");
-        document.getElementById("cell").focus();
-        document.getElementById("cell").style.backgroundColor = "#FF6666";
+    }
+    else if (rating == null || rating == "") {
+    	alert("Rating must be filled out.");
+        document.getElementById("rating").focus();
+        document.getElementById("rating").style.backgroundColor = "#FF6666";
+        return false;
+    }
+    // else if (email == null ||  email == "") {
+    //     alert("Email must be filled out.");
+    //     document.getElementById("email").focus();
+    //     document.getElementById("email").style.backgroundColor = "#FF6666";
+    //     return false; }
+    else if (comment == null || comment =="") {
+    	alert("Please write a comment.");
+        document.getElementById("comment").focus();
+        document.getElementById("comment").style.backgroundColor = "#FF6666";
         return false;
     }
 
