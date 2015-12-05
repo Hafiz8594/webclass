@@ -1,0 +1,138 @@
+@media only screen and (max-width: 750px) {
+
+	div#leftcol, div#centercol, div#rightcol {
+		width: 100%;
+		height: auto;
+		float: none;
+		margin-left:auto;
+		margin-right: auto;
+	}
+
+}
+
+body {
+	background-color: #BCED91;
+	font-family: verdana;
+}
+
+header, footer, #leftcol, #centercol, #rightcol {
+	background-color: #ffff99;
+}
+
+h1, nav {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+	text-decoration: underline;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #218868;
+    text-decoration: none;
+}
+
+td {
+	width: 200px;
+}
+
+textarea {
+	width: 40%;
+	height: 40%;
+}
+
+#leftcol, #rightcol {
+	padding: 0.25%;
+	width: 14%;
+	height: 610px;
+	margin-bottom: 10px;
+}
+
+#centercol {
+	width: 64.5%;
+	float:left;
+	display: inline-block;
+	padding: 0.25%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-bottom: 10px;
+}
+
+#leftcol {
+	float: left;
+}
+
+#rightcol{
+	float: right;
+}
+
+header h1 {
+	color: #218868;
+}
+
+h2 {
+	color: red;
+	margin-bottom: 5px;
+}
+
+a:hover {
+	background-color: yellow;
+	color: green;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+hr {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+img {
+	margin-right: 10px;
+}
+
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+}
+
+textarea, input, select {
+   display: inline-block;
+}
+
+figure img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
+}
+
+p {
+	clear: left;
+}
+
+footer {
+	font-style: italic;
+	clear: both;
+}

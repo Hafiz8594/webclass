@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/JavaScript" src="script.js"></script>
+		<title>Animal Kingdom Survey</title>
+	</head>
+
+	<body onload="welcome();">
+
+
+		<header>
+			<h1>Animal Kindgom Survey</h1>
+		</header>
+
+		<div id="leftcol">
+
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="index.html">About Us</a></li>
+			  <li><a href="index.html">Exhibits</a></li>
+			  <li><a href="index.html">About</a></li>
+			</ul>
+
+		</div>
+
+		<div id="centercol">
+			<h4>Customer Satisfaction Survery</h4>
+
+			<form method="post" action="" id="form" name="form">
+
+				<fieldset>
+					<legend>Personal Info</legend>
+						<label>Name:</label> <input type="text" name="name" id="name"/><br />
+						<label>Email:</label> <input type="text" name="email" id="email"/><br />
+				</fieldset>
+
+				<br />
+				<br />
+				Please rate your Animal Kingdom experience from 1 - 5: <input type="text" name="rating" id="rating"/>
+				<br />
+
+				<br />
+				<br />
+				Please describe your experience in a few words:<br />
+				<textarea name="comment" id="comment"></textarea>
+
+				<br />
+				<br />
+				<button type="button" onClick="window.open(process_survey.php)">View Comments</button>
+				<input type="submit" value="Submit" onclick="return validateForm(this.form)">
+				<button type="reset" value="Reset">Reset</button>
+
+			</form>
+
+
+		</div>
+
+		<div id="rightcol">
+		A quick fact about chimpanzees:<br /><br />
+		If you ever wonder if you are looking at an ape or a monkey, look for a tail. Monkeys have tails, apes: chimpanzees, bonobos, gorillas, orangutans, gibbons, and humans –do not.
+		</div>
+
+
+
+		<footer>
+			JavaScript can be found here: <a href="script.js">script.js</a><br />
+			Stylesheet can be found here: <a href="style.css">style.css</a>
+		</footer>
+
+	</body>
+
+</html>
